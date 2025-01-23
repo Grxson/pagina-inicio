@@ -395,6 +395,7 @@ body {
   top: 0;
 }
 /* SECCION Por qué elegirnos */
+/* SECCION Por qué elegirnos */
 .por-que-elegirnos {
   background: linear-gradient(to right, #002776, #004aad);
   color: #fff;
@@ -422,10 +423,11 @@ body {
 
 .por-que-elegirnos .razones {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Permite que las tarjetas se acomoden de forma flexible */
   gap: 20px;
-  justify-content: center;
+  justify-content: center; /* Asegura que las tarjetas se centren */
   align-items: flex-start;
+  margin-bottom: 50px; /* Añadir espacio al final */
 }
 
 .por-que-elegirnos .razon {
@@ -433,9 +435,17 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   padding: 20px;
-  max-width: 300px;
   text-align: center;
   transition: transform 0.3s ease, background 0.3s ease;
+  width: 100%; /* Ocupa el 100% en dispositivos pequeños */
+  max-width: 350px; /* Limita el tamaño máximo de las tarjetas */
+  flex: 1 1 300px; /* Hace que las tarjetas sean flexibles */
+  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total */
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .por-que-elegirnos .razon:hover {
@@ -459,7 +469,6 @@ body {
   font-size: 1em;
   color: #ddd;
 }
-
 @media (max-width: 1024px) {
   .por-que-elegirnos h2 {
     font-size: 2em;
