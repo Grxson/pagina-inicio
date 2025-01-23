@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Ekipo Cachondo</title>
+</head>
+<body>
+    <!-- Secciòn INICIO -->
+    <span class="sombra">
+        <section id="inicio" class="inicio">
+            <div class="contenido">
+                <header>
+                    <div class="logo">
+                        <i class="fa-solid fa-code"></i>
+                            <h1>Ekipo Cachondo</h1>
+                    </div>
+                    <nav id="nav" class=""">
+                        <a href="#inicio">Inicio</a>
+                        <a href="#servicios">Servicios</a>
+                        <a href="#trabajos">Trabajos</a>
+                        <a href="#contacto">Contacto</a>
+                    </nav>
+    
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+    
+                    <!-- <div class="redes">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div> -->
+                </header>
+    
+                <div class="fila">
+                    <div class="col">
+                        <h2>¿Quiénes Somos?</h2>
+                        <p>
+                        Somos una consultoría de software dedicada a transformar tus ideas en soluciones tecnológicas innovadoras. Nuestro equipo de expertos combina experiencia y creatividad para ayudarte a alcanzar tus objetivos de negocio.
+                        </p>
+                        
+                        <h2>¿Qué Hacemos?</h2>
+                        <p>
+                        Diseñamos, desarrollamos y optimizamos soluciones de software a medida, enfocándonos en mejorar tus procesos, aumentar tu productividad y garantizar resultados de alta calidad. Desde aplicaciones móviles hasta sistemas empresariales complejos, estamos aquí para hacer realidad tus proyectos.
+                        </p>
+                        
+                        <button onclick="location.href='#contacto'" class="btn btn-1">Contáctanos</button>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="contenedor-img">
+                            <img src="img/foto-inicio.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </span>
+
+    <!-- sección SERVICIOS -->
+    <section id="servicios" class="servicios">
+        <div class="fila">
+            <div class="col">
+                <div class="card">
+                    <div class="icono color1">
+                        <div class="circulo">
+                            <i class="fa-solid fa-bug"></i>
+                        </div>
+                    </div>
+                    <h3>Detección y Corrección de Errores</h3>
+                    <p>Ofrecemos soluciones rápidas y efectivas para identificar y corregir errores en sistemas existentes, asegurando su funcionamiento óptimo.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color2">
+                        <div class="circulo">
+                            <i class="fa-solid fa-code-branch"></i>
+                        </div>
+                    </div>
+                    <h3>Optimización de Procesos</h3>
+                    <p>Desarrollamos herramientas personalizadas para automatizar procesos y mejorar la eficiencia operativa de tu empresa.</p>
+                    
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color3">
+                        <div class="circulo">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                    </div>
+                    <h3>Seguridad en Aplicaciones</h3>
+                    <p>Implementamos medidas de seguridad avanzadas para proteger tus aplicaciones y datos contra posibles vulnerabilidades.</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <div class="card">
+                    <div class="icono color1">
+                        <div class="circulo">
+                            <i class="fa-solid fa-desktop"></i>
+                        </div>
+                    </div>
+                    <h3>Desarrollo a Medida</h3>
+                    <p>Diseñamos y desarrollamos soluciones de software adaptadas a las necesidades específicas de tu negocio.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color2">
+                        <div class="circulo">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <h3>Integración de Sistemas</h3>
+                    <p>Conectamos tus sistemas existentes para mejorar la comunicación y el flujo de datos entre ellos.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color3">
+                        <div class="circulo">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                    </div>
+                    <h3>Soporte Técnico</h3>
+                    <p>Brindamos asistencia técnica continua para garantizar que tus sistemas funcionen sin interrupciones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    <!-- sección trabajos -->
+    <section class="trabajos" id="trabajos">
+        <h2>Nuestros Trabajos</h2>
+
+        <nav>
+            <a href="javascript:void(0)" class="borde" id="item" onclick="verCategoria('item')">Todos</a>
+            <a href="javascript:void(0)" class="" id="disenio" onclick="verCategoria('disenio')">Diseño</a>
+            <a href="javascript:void(0)" class="" id="programacion" onclick="verCategoria('programacion')">Programación</a>
+        </nav>
+
+        <div class="galeria">
+            <div class="item disenio">
+                <img src="https://www.mtp.es/wp-content/uploads/2018/02/proces-pruebas.jpg" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="https://www.mtp.es/wp-content/uploads/2018/02/proces-pruebas.jpg" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="https://www.mtp.es/wp-content/uploads/2018/02/proces-pruebas.jpg" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item disenio">
+                <img src="https://www.mtp.es/wp-content/uploads/2018/02/proces-pruebas.jpg" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="https://www.mtp.es/wp-content/uploads/2018/02/proces-pruebas.jpg" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="https://www.mtp.es/wp-content/uploads/2018/02/proces-pruebas.jpg" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item disenio">
+                <img src="https://www.mtp.es/wp-content/uploads/2018/02/proces-pruebas.jpg" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="https://www.mtp.es/wp-content/uploads/2018/02/proces-pruebas.jpg" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="https://www.mtp.es/wp-content/uploads/2018/02/proces-pruebas.jpg" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sección elegirnos -->
+    <section class="por-que-elegirnos" id="elegirnos">
+        <div class="contenedor">
+          <h2>¿Por qué elegirnos?</h2>
+          <p class="descripcion">
+            En nuestra empresa de desarrollo de software, transformamos tus ideas en soluciones innovadoras que impulsan tu éxito.
+          </p>
+          <div class="razones">
+            <div class="razon">
+              <div class="icono">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3>Expertos en Tecnología</h3>
+              <p>Contamos con un equipo altamente capacitado que utiliza las tecnologías más avanzadas para desarrollar soluciones personalizadas.</p>
+            </div>
+            <div class="razon">
+              <div class="icono">
+                <i class="fa-solid fa-handshake"></i>
+              </div>
+              <h3>Compromiso Total</h3>
+              <p>Nos enfocamos en construir relaciones de confianza y trabajar como un verdadero socio para alcanzar tus objetivos.</p>
+            </div>
+            <div class="razon">
+              <div class="icono">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <h3>Resultados Tangibles</h3>
+              <p>Garantizamos soluciones efectivas que mejoran la productividad y los resultados de tu negocio.</p>
+            </div>
+            <div class="razon">
+              <div class="icono">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <h3>Seguridad y Calidad</h3>
+              <p>Aseguramos que cada proyecto cumple con los más altos estándares de calidad y seguridad.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- sección contacto -->
+    <section class="contacto" id="contacto">
+        <div class="contenedor-contacto">
+          <h2>Contacto</h2>
+          <p class="mensaje">
+            ¿Necesitas un software? Manda un correo o un mensaje, estamos aquí para ayudarte.
+          </p>
+          <div class="fila">
+            <div class="col">
+              <div class="info">
+                <h3>Email:</h3>
+                <p>correo@correo.com</p>
+              </div>
+              <div class="info">
+                <h3>Teléfono:</h3>
+                <p>+52 123456789</p>
+              </div>
+              <div class="info">
+                <h3>Ciudad:</h3>
+                <p>Guadalajara</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+    
+
+    <footer>
+        <p>Ekipo Cachocondo 2025</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
