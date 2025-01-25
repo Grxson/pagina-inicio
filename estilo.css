@@ -10,12 +10,12 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(219, 219, 219);
 }
 
 /* SECCION I N I C I O */
 .inicio {
-  background: linear-gradient(to right, #000c67, #007be5);
+  background: linear-gradient(to right, rgb(3, 17, 124), rgb(0, 0, 0));
   clip-path: polygon(0 0, 100% 0, 100% 46%, 47% 84%, 0 45%);
   height: 90vh;
   padding: 0 20px;
@@ -397,7 +397,7 @@ body {
 /* SECCION Por qué elegirnos */
 /* SECCION Por qué elegirnos */
 .por-que-elegirnos {
-  background: linear-gradient(to right, #002776, #004aad);
+  background: linear-gradient(to right, rgb(3, 17, 124), rgb(0, 0, 0));
   color: #fff;
   padding: 60px 20px;
   text-align: center;
